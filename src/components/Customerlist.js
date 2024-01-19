@@ -13,24 +13,7 @@ export class Customerlist extends Component {
       }
     }
 
-    // componentDidMount(prevProps, prevState) { 
-    //     axios.get('http://localhost:5000/customers')
-    //         .then((res)=>{
-    //             this.setState({customers: res.data})
-    //         }).catch((err)=>{
-    //             console.log(err)
-    //         })
-
-    //  }
-
      async componentDidMount() { 
-        // try{
-        //     const res = await fetch(`http://localhost:5000/customers`)
-        //     const json = await res.json();
-        //     this.setState({customers: json})
-        // } catch (error) {
-        //     console.log(error);
-        // }
         try {
             const res = await fetch(`http://localhost:5000/customers`);
             const json = await res.json();
