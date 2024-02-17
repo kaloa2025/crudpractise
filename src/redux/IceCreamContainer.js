@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import {useDispatch,useSelector } from 'react-redux';
-import { buyIceCream } from '../redux';
+import { buyIceCream } from './iceCream/iceCreamActions';
 
 
 function IceCreamContainer(props) {

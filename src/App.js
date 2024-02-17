@@ -47,12 +47,17 @@ import store from './redux/store';
 
 import React from 'react';
 import CakeContainer from './redux/CakeContainer';
+import IceCreamContainer from './redux/IceCreamContainer';
+import ItemContainer from './redux/ItemContainer';
 
 function App(){
 return(
     <Provider store ={store}>
         <div>
             <CakeContainer/>
+            <IceCreamContainer/>
+            <ItemContainer cake/>
+            <ItemContainer/>
         </div>
     </Provider>
 )
