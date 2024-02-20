@@ -25,7 +25,7 @@ export const fetchUsers=()=>
 {
     return(dispatch)=>{
         dispatch(fetchUsersRequest)
-        return axios.get('')
+        return axios.get('http://localhost:5000/customers')
             .then((res)=>{
                 dispatch(fetchUsersSuccess(res.data))
             }).catch((err)=>{
